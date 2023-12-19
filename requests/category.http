@@ -1,0 +1,37 @@
+// Create
+POST HTTP://localhost:8080/api/categories
+Content-Type: application/json
+
+{
+    "name": "Mouse"
+}
+
+###
+
+POST HTTP://localhost:8080/api/categories
+Content-Type: application/json
+
+{
+    "name": "Monitor"
+}
+
+###
+// Read
+GET http://localhost:8080/api/categories
+
+###
+
+GET http://localhost:8080/api/categories/2
+
+###
+// Update
+PUT HTTP://localhost:8080/api/categories/2
+Content-Type: application/json
+
+{
+    "name": "Monitores"
+}
+
+###
+// Delete
+DELETE http://localhost:8080/api/categories/2

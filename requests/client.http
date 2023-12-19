@@ -1,0 +1,40 @@
+// Create
+POST HTTP://localhost:8080/api/clients
+Content-Type: application/json
+
+{
+    "name": "Fulano Silvano",
+    "email": "fulano123@gmail.com"
+}
+
+###
+
+POST HTTP://localhost:8080/api/clients
+Content-Type: application/json
+
+{
+    "name": "Patricia Ferreira",
+    "email": "pat123@gmail.com"
+}
+
+###
+// Read
+GET http://localhost:8080/api/clients
+
+###
+
+GET http://localhost:8080/api/clients/2
+
+###
+// Update
+PUT HTTP://localhost:8080/api/clients/2
+Content-Type: application/json
+
+{
+    "name": "Patricia Ferreira da Silva",
+    "email": "pat1235@gmail.com"
+}
+
+###
+// Delete
+DELETE http://localhost:8080/api/clients/2

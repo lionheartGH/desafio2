@@ -1,0 +1,64 @@
+// Create
+// Para usar esse codigo mais de uma vez, use o de baixo ao menos uma vez para da-lo o id 2 para manter a sequencia de codigos correta
+POST HTTP://localhost:8080/api/address
+Content-Type: application/json
+
+{
+    "cep": "27600-000",
+    "street": "Rua dos Mineiros",
+    "number": 12,
+    "district": "Centro",
+    "complement": "Ao lado da farmacia",
+    "city": "Valença",
+    "state": "RJ",
+    "client": {
+        "id": 1
+    }
+}
+
+###
+
+POST HTTP://localhost:8080/api/address
+Content-Type: application/json
+
+{
+    "cep": "27600-000",
+    "street": "Rua dos Mineiros",
+    "number": 89,
+    "district": "Centro",
+    "city": "Valença",
+    "state": "RJ",
+    "client": {
+        "id": 2
+    }
+}
+
+###
+// Read
+GET http://localhost:8080/api/address
+
+###
+
+GET http://localhost:8080/api/address/2
+
+###
+// Update
+PUT HTTP://localhost:8080/api/address/2
+Content-Type: application/json
+
+{
+    "cep": "27600-000",
+    "street": "Rua dos Mineiros",
+    "number": 89,
+    "district": "Centro",
+    "complement": "Perto da esquina",
+    "city": "Valença",
+    "state": "RJ",
+    "client": {
+        "id": 1
+    }
+}
+
+###
+// Delete
+DELETE http://localhost:8080/api/address/2

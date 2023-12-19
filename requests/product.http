@@ -1,0 +1,55 @@
+// Create
+// Para usar esse codigo mais de uma vez, use o de baixo ao menos uma vez para da-lo o id 2 para manter a sequencia de codigos correta
+POST HTTP://localhost:8080/api/products
+Content-Type: application/json
+
+{
+    "description": "Mouse Razer",
+    "category": {
+        "id": 1
+    },
+    "stock": 25,
+    "price": 29.99
+}
+
+###
+
+POST HTTP://localhost:8080/api/products
+Content-Type: application/json
+
+{
+    "description": "Monitor Samsung",
+    "category": {
+        "id": 2
+    },
+    "stock": 12,
+    "price": 450.00,
+    "observation": "32 polegadas."
+}
+
+###
+// Read
+GET http://localhost:8080/api/products
+
+###
+
+GET http://localhost:8080/api/products/2
+
+###
+// Update
+PUT HTTP://localhost:8080/api/products/2
+Content-Type: application/json
+
+{
+    "description": "Monitor LG",
+    "category": {
+        "id": 2
+    },
+    "stock": 13,
+    "price": 420.00,
+    "observation": "32 polegadas."
+}
+
+###
+// Delete
+DELETE http://localhost:8080/api/products/2
